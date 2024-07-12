@@ -3,6 +3,8 @@ from pywhatkit import sendwhatmsg_instantly as sendwhatmsg
 import pandas as pd
 from datetime import date, datetime
 import time
+import os
+os.environ['DISPLAY'] = ':0'
 
 def send_messages(data):
     if 'Date' not in data.columns:
